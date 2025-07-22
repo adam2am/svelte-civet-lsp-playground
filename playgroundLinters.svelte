@@ -3,7 +3,6 @@
 	check1 := `${
 	value
 	}`
-	export { abc }
  
 	msg3 .= `${ name1 } says hi`
 	# vs 
@@ -104,7 +103,6 @@
 
 	// ─────────── Range & slice edge cases ───────────
 	degenRange := [x..x]                                  // same start/end
-	// fucked here, should say arr is not found
 	spreadSlice := [...arr[1..-1]]                       // spread + slice
 	mixedRange := [1...3] and [4...6]                          // .. and ... mixed
 	
@@ -112,8 +110,6 @@
 		some1 := arr[-2..-1]                   // negative slice assign
 		some2 := [1...3] = [] 
 
-	// what does it communicate.o ookay, moving on
-	// unexpected, but not a blocker
 	x .= 3 
 	multiLineInter2 := ```
 		outer line
@@ -259,12 +255,6 @@
 	Dear #{user2},
 	This is a multi-line string.
 	"""
-	###
-do i believe people over there want to say something to enhance my life, 
-actually acts with my interest in mind?
-matches => now wanna move
-== without ... would be over 50 years ago
-	###
 
 	multiline2 .= ```
 	dear ${user1}
