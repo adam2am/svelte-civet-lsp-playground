@@ -25,9 +25,6 @@
 
     for fruit1, index in fruits
         console.log index, fruits
-    
-
-
 
     // --- fixed ---
     abc := foo.bar // bar would not be hovered if no semicolon
@@ -40,8 +37,10 @@
         bar: [
         [1...50].map((range) -> range * range)
         ]    
-</script> 
-    
+
+</script>  
+    <!-- when tab before a </script> = linter errors in template are shifted
+         TODO: more robust svelte2tsx preprocessor setup  -->
     {total}
     
     
