@@ -2,6 +2,9 @@
     abc := 231
     // 1. first line is being textmate highlighted as a function
 
+    func2 := () ->
+	    some1 := 123 // 2. some1 1 char linter
+
     function getUsers(fetch: typeof globalThis.fetch): Promise<User[]>
             try
                 users := '' // 2. user is only 1 char long
