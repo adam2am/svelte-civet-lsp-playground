@@ -1,10 +1,7 @@
-
-
-{bcd2}
-
 <script lang="civet">
      abc := 231
      // 1. first line is being textmate highlighted as a function
+     // gimme me , yeah im tryingsomething
 
      func2 := () ->
           some1 := 123 // 2. some1 1 char linter
@@ -19,9 +16,9 @@
                          if not response.ok
                               throw new Error("HTTP #{response.status}: #{response.statusText}")
                          response
-                         // 2. response being only 1 character (just like user)
+                         // 2. response being only 1 character (just like user) / non-existing
 
-     switch response // 2. response linter being only 1 character 
+     switch response // 2. response linter being only 1 character / non-existing
           {status: 100, body} // 4. status:100 is not hoverable
                console.log body
           {status}
